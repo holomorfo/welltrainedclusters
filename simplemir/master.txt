@@ -1,0 +1,63 @@
+
+
+Tasks to solve
+
+File helper
+    Need to create my own format for analysis
+
+Queries
+    * text
+    melody
+    chords
+
+Analysis
+    * Statistic analysis
+    * Feature extraction
+    * Soloist analysis (voice analysis)
+    Form
+    *    DTW
+        Other measures
+    *    Paradigms
+    Chords
+    *    fuzzy
+        Neural Networks
+    Style
+        Gaspar Sanz
+
+Libraries needed
+
+File manager/reader
+Convert score to text file, maybe json for faster analysis
+
+User database 
+
+Diagram of functions
+
+
+==========================================================
+
+Webpage structure
+
+Main/
+    Upload piece
+    Manage pieces list
+
+    Query system
+        query by MIDI
+        query by text
+        query by similar
+
+    Extract analysis of the piece
+        Generate report
+        Style
+        Feature graphs
+        Paradigms
+        Form
+        Chord Analysis (Experimental)
+    
+    Library analysis (data mining)
+
+
+
+
+

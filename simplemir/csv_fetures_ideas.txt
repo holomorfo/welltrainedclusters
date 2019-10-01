@@ -1,0 +1,330 @@
+harmony
+        perc_non_diatonic_notes: 0.02666666666666667
+        perc_diatonic_notes: 0.9733333333333334
+        number_key_changes: 1
+        number_distinct_chords: 5
+ 
+melody: 
+        number_notes: 75
+        number_rests: 14
+        range_pitch: 26
+        number_mel_changes: 10
+        stats_notes: [
+        ]
+        stats_intervals: [
+        ]
+        dominant_pitch: 0
+        dominant_pitch_class: [
+            2
+            16
+        ]
+
+rythm: 
+        range_durations: 3.5
+        number_distinct_durations: 4
+        number_measures: 13
+        number_distinct_ioi: 9
+        number_time_ratio_changes: 1
+        number_tempo_changes: 1
+
+==================================================================
+
+SENDING:
+ Row {
+  file_name: '8-PassacagliaD',
+  path: 'files/8-PassacagliaD.musicxml',
+  'Num measures': '58',
+  'Num notes': '449',
+  'Num rests': '25',
+  'Num chords': '28',
+  'Range pitch': '37',
+  'Range Durations': '2.75',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '24',
+  'Paradigms pclass': '12',
+  'Num durations': '4',
+  'Min note': '52',
+  'Max note': '89',
+  'Average note': '70',
+  'Deviation notes': '8',
+  'Interval min': '-29',
+  'Interval max': '8',
+  'Average Interval': '-10',
+  'Deviation intervals': '9',
+  'Dominant pitch': '51',
+  'Percentage diatonic': '0.9020044543429844',
+  'Num Key Changes': '1',
+  'Num mel changes': '95',
+  'Time ratio changes': '1',
+  'Tempo changes': '1',
+  'Num ioi': '21' }
+
+SENDING:
+ Row {
+  file_name: '85-Ejemplo1GuitarraDemasInstrumentos',
+  path: 'files/85-Ejemplo1GuitarraDemasInstrumentos.musicxml',
+  'Num measures': '21',
+  'Num notes': '87',
+  'Num rests': '0',
+  'Num chords': '11',
+  'Range pitch': '36',
+  'Range Durations': '0.0',
+  'Paradigms pitch': '7',
+  'Paradigms durs': '3',
+  'Paradigms pclass': '7',
+  'Num durations': '1',
+  'Min note': '43',
+  'Max note': '79',
+  'Average note': '65',
+  'Deviation notes': '11',
+  'Interval min': '-19',
+  'Interval max': '17',
+  'Average Interval': '-3',
+  'Deviation intervals': '12',
+  'Dominant pitch': '13',
+  'Percentage diatonic': '0.896551724137931',
+  'Num Key Changes': '2',
+  'Num mel changes': '19',
+  'Time ratio changes': '0',
+  'Tempo changes': '1',
+  'Num ioi': '3' }
+
+SENDING:
+ Row {
+  file_name: '86-EjemploSegundoSustenidosBemoles',
+  path: 'files/86-EjemploSegundoSustenidosBemoles.musicxml',
+  'Num measures': '7',
+  'Num notes': '30',
+  'Num rests': '0',
+  'Num chords': '7',
+  'Range pitch': '37',
+  'Range Durations': '0.0',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '1',
+  'Paradigms pclass': '10',
+  'Num durations': '1',
+  'Min note': '44',
+  'Max note': '81',
+  'Average note': '66',
+  'Deviation notes': '11',
+  'Interval min': '-21',
+  'Interval max': '16',
+  'Average Interval': '-3',
+  'Deviation intervals': '15',
+  'Dominant pitch': '1',
+  'Percentage diatonic': '0.4',
+  'Num Key Changes': '2',
+  'Num mel changes': '1',
+  'Time ratio changes': '2',
+  'Tempo changes': '0',
+  'Num ioi': '2' }
+
+SENDING:
+ Row {
+  file_name: '87-EjemploCadencia3raRegla',
+  path: 'files/87-EjemploCadencia3raRegla.musicxml',
+  'Num measures': '57',
+  'Num notes': '716',
+  'Num rests': '1',
+  'Num chords': '54',
+  'Range pitch': '38',
+  'Range Durations': '5.75',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '22',
+  'Paradigms pclass': '12',
+  'Num durations': '5',
+  'Min note': '43',
+  'Max note': '81',
+  'Average note': '65',
+  'Deviation notes': '10',
+  'Interval min': '-21',
+  'Interval max': '17',
+  'Average Interval': '-3',
+  'Deviation intervals': '12',
+  'Dominant pitch': '80',
+  'Percentage diatonic': '0.8645251396648045',
+  'Num Key Changes': '6',
+  'Num mel changes': '25',
+  'Time ratio changes': '14',
+  'Tempo changes': '1',
+  'Num ioi': '28' }
+
+SENDING:
+ Row {
+  file_name: '90-PasajesDelBajo',
+  path: 'files/90-PasajesDelBajo.musicxml',
+  'Num measures': '42',
+  'Num notes': '692',
+  'Num rests': '0',
+  'Num chords': '39',
+  'Range pitch': '39',
+  'Range Durations': '3.5',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '14',
+  'Paradigms pclass': '10',
+  'Num durations': '4',
+  'Min note': '43',
+  'Max note': '82',
+  'Average note': '63',
+  'Deviation notes': '10',
+  'Interval min': '-22',
+  'Interval max': '17',
+  'Average Interval': '-1',
+  'Deviation intervals': '11',
+  'Dominant pitch': '77',
+  'Percentage diatonic': '0.8815028901734104',
+  'Num Key Changes': '2',
+  'Num mel changes': '60',
+  'Time ratio changes': '0',
+  'Tempo changes': '1',
+  'Num ioi': '16' }
+
+SENDING:
+ Row {
+  file_name: '93-AlQueGustareDeFalsasCuidado',
+  path: 'files/93-AlQueGustareDeFalsasCuidado.musicxml',
+  'Num measures': '21',
+  'Num notes': '136',
+  'Num rests': '2',
+  'Num chords': '26',
+  'Range pitch': '29',
+  'Range Durations': '5.0',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '4',
+  'Paradigms pclass': '11',
+  'Num durations': '3',
+  'Min note': '57',
+  'Max note': '86',
+  'Average note': '72',
+  'Deviation notes': '7',
+  'Interval min': '-26',
+  'Interval max': '3',
+  'Average Interval': '-17',
+  'Deviation intervals': '5',
+  'Dominant pitch': '15',
+  'Percentage diatonic': '0.8308823529411765',
+  'Num Key Changes': '1',
+  'Num mel changes': '2',
+  'Time ratio changes': '1',
+  'Tempo changes': '0',
+  'Num ioi': '9' }
+
+SENDING:
+ Row {
+  file_name: '94-Fuga1',
+  path: 'files/94-Fuga1.musicxml',
+  'Num measures': '27',
+  'Num notes': '261',
+  'Num rests': '0',
+  'Num chords': '26',
+  'Range pitch': '29',
+  'Range Durations': '3.5',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '5',
+  'Paradigms pclass': '12',
+  'Num durations': '3',
+  'Min note': '57',
+  'Max note': '86',
+  'Average note': '71',
+  'Deviation notes': '7',
+  'Interval min': '-26',
+  'Interval max': '3',
+  'Average Interval': '-13',
+  'Deviation intervals': '6',
+  'Dominant pitch': '26',
+  'Percentage diatonic': '0.735632183908046',
+  'Num Key Changes': '1',
+  'Num mel changes': '17',
+  'Time ratio changes': '1',
+  'Tempo changes': '0',
+  'Num ioi': '13' }
+
+SENDING:
+ Row {
+  file_name: '96-Fuga_2',
+  path: 'files/96-Fuga_2.musicxml',
+  'Num measures': '28',
+  'Num notes': '192',
+  'Num rests': '1',
+  'Num chords': '32',
+  'Range pitch': '29',
+  'Range Durations': '2.5',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '5',
+  'Paradigms pclass': '12',
+  'Num durations': '3',
+  'Min note': '57',
+  'Max note': '86',
+  'Average note': '71',
+  'Deviation notes': '7',
+  'Interval min': '-26',
+  'Interval max': '3',
+  'Average Interval': '-13',
+  'Deviation intervals': '7',
+  'Dominant pitch': '8',
+  'Percentage diatonic': '0.859375',
+  'Num Key Changes': '1',
+  'Num mel changes': '16',
+  'Time ratio changes': '3',
+  'Tempo changes': '0',
+  'Num ioi': '10' }
+
+SENDING:
+ Row {
+  file_name: '98-Zarabanda_Francesa',
+  path: 'files/98-Zarabanda_Francesa.musicxml',
+  'Num measures': '18',
+  'Num notes': '140',
+  'Num rests': '0',
+  'Num chords': '20',
+  'Range pitch': '29',
+  'Range Durations': '1.5',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '5',
+  'Paradigms pclass': '10',
+  'Num durations': '3',
+  'Min note': '57',
+  'Max note': '86',
+  'Average note': '72',
+  'Deviation notes': '7',
+  'Interval min': '-26',
+  'Interval max': '-2',
+  'Average Interval': '-18',
+  'Deviation intervals': '5',
+  'Dominant pitch': '16',
+  'Percentage diatonic': '0.9071428571428571',
+  'Num Key Changes': '1',
+  'Num mel changes': '0',
+  'Time ratio changes': '1',
+  'Tempo changes': '1',
+  'Num ioi': '13' }
+
+SENDING:
+ Row {
+  file_name: '99-PasacallePorLaE',
+  path: 'files/99-PasacallePorLaE.musicxml',
+  'Num measures': '73',
+  'Num notes': '749',
+  'Num rests': '3',
+  'Num chords': '34',
+  'Range pitch': '29',
+  'Range Durations': '2.75',
+  'Paradigms pitch': '12',
+  'Paradigms durs': '15',
+  'Paradigms pclass': '11',
+  'Num durations': '4',
+  'Min note': '57',
+  'Max note': '86',
+  'Average note': '70',
+  'Deviation notes': '7',
+  'Interval min': '-26',
+  'Interval max': '3',
+  'Average Interval': '-12',
+  'Deviation intervals': '7',
+  'Dominant pitch': '43',
+  'Percentage diatonic': '0.9012016021361816',
+  'Num Key Changes': '1',
+  'Num mel changes': '67',
+  'Time ratio changes': '1',
+  'Tempo changes': '1',
+  'Num ioi': '26' }
