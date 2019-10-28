@@ -32,7 +32,9 @@ def get_scores_from_paths(path_list):
     for counter, file_path in enumerate(path_list):
         print(100*counter//len(path_list), '%')
         print(file_path)
-        scores.append(converter.parse(file_path))
+        
+        
+        scores.append(remove_breaks(converter.parse(file_path)))
     return list(zip(path_list, scores))
 
 
