@@ -9,7 +9,6 @@ from music21 import chord
 # TODO: Implement Zipf analysis, Eduardo
 
 # TODO: Implement Hierarchical analysis of Pablo Mendoza
-
 def get_scores_from_paths(path_list):
     """
     Takes a list of music21 file paths and returns the music21.scores
@@ -36,6 +35,32 @@ def get_scores_from_paths(path_list):
         
         scores.append(remove_breaks(converter.parse(file_path)))
     return list(zip(path_list, scores))
+
+def get_scores_from_paths_json(path_list):
+    """
+    Takes a list of music21 file paths and returns the music21.scores
+    created from them    
+
+    Args: 
+        path_list: List of strings, each element is a file path to a 
+            music21 compatible file 
+
+    Returns: 
+        scores: List of tupples where the first element of the tupple is
+             the path name and the second the music21.score
+
+    Raises: 
+        music21.converter.ConverterFileException: If one of the path 
+        files does not link ot a music21 compatible file
+
+    """
+    scores = []
+    for counter, file_path in enumerate(path_list):
+        print(100*counter//len(path_list), '%')
+        print(file_path)
+#         scores.append(remove_breaks(converter.parse(file_path)))
+        scores.append({'path':file_path,'score':remove_breaks(converter.parse(file_path))})
+    return scores
 
 
 def remove_breaks(strm):
