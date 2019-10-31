@@ -10,3 +10,7 @@ for i, e in enumerate(scoreTuppleList):
     print(i, e)
 
 scoreTuppleList[1][1].show()
+>> > ts.numerator
+3
+>> >
+>> > ts.beatCount
