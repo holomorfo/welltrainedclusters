@@ -4,6 +4,11 @@ from music21 import layout
 from music21 import musicxml
 from music21 import note
 from music21 import chord
+from music21 import tempo
+from music21 import key
+from music21 import meter
+from music21 import clef
+
 
 
 # TODO: Implement Zipf analysis, Eduardo
@@ -36,7 +41,7 @@ def get_scores_from_paths(path_list):
         scores.append(remove_breaks(converter.parse(file_path)))
     return list(zip(path_list, scores))
 
-def get_scores_from_paths_json(path_list):
+def get_scores_from_paths_json(path_list, verbose=False):
     """
     Takes a list of music21 file paths and returns the music21.scores
     created from them    
@@ -56,12 +61,57 @@ def get_scores_from_paths_json(path_list):
     """
     scores = []
     for counter, file_path in enumerate(path_list):
-        print(100*counter//len(path_list), '%')
-        print(file_path)
-#         scores.append(remove_breaks(converter.parse(file_path)))
+        if verbose:
+            print(100*counter//len(path_list), '%')
+            print(file_path)
         scores.append({'path':file_path,'score':remove_breaks(converter.parse(file_path))})
     return scores
 
+# def get_measures_from_paths_json(path_dirs_list,extension='xml', verb=False):
+
+def getMeasuresListJson(scores,verbose=False):
+    allMeasures = []
+    lastMetronomeMark = tempo.MetronomeMark()
+    lastKeysignature = key.KeySignature()
+    lastTimeSignature = meter.TimeSignature()
+    lastClef = clef.Clef()
+    for i, strm in enumerate(scores):
+        if verbose:
+            print((100*i)//len(scores),'%')
+        path = strm['path']
+        strmScore = strm['score']
+        for p in strmScore.getElementsByClass(stream.Part):
+            for m in p.getElementsByClass(stream.Measure):
+                isActive = False
+                for r in m.recurse():
+                    if type(r) == clef.TrebleClef:
+                        lastClef = r
+                    if type(r) == clef.BassClef:
+                        lastClef = r
+                    if type(r) == note.Note:
+                        isActive = True
+                    if type(r) == tempo.MetronomeMark:
+                        lastMetronomeMark = r
+                    if type(r) == key.KeySignature:
+                        lastKeysignature = r
+                    if type(r) == meter.TimeSignature:
+                        lastTimeSignature = r
+                try:
+                    m.insert(0, lastTimeSignature)
+                    m.insert(0, lastMetronomeMark)
+                    m.insert(0, lastKeysignature)
+                    m.insert(0, lastClef)
+                except:
+                    True
+                if isActive:
+                    obj = {
+                        "path": path,
+                        "part": p.partName,
+                        "number": m.number,
+                        "measure": m
+                    }
+                    allMeasures.append(obj)
+    return allMeasures
 
 def remove_breaks(strm):
     """

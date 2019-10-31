@@ -10,7 +10,8 @@ import sys
 print("Path", sys.argv[1])
 
 
-def getMeasuresList(scores):
+def getMeasuresList(scores_json):
+    scores = scores_json
     allMeasures = []
     lastMetronomeMark = tempo.MetronomeMark()
     lastKeysignature = key.KeySignature()
