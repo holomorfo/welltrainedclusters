@@ -73,7 +73,7 @@ def letterToKey(letter, scale=20):
     pclass = pitch.Pitch(letter).pitchClass
     ret = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     ret[pclass] = isMayor
-    return scale*ret
+    return ret
 
 
 def melIntervalsHisto(melInters):
@@ -86,8 +86,8 @@ def melIntervalsHisto(melInters):
 
 
 def calcDescriptors(inputMeasures):
-    allMeasures = copy.deepcopy(inputMeasures)
     start = time.time()
+    allMeasures = copy.deepcopy(inputMeasures)
     p = analysis.discrete.Ambitus()
     melIntervs = analysis.discrete.MelodicIntervalDiversity()
     for i, m in enumerate(allMeasures):
@@ -111,8 +111,6 @@ def calcDescriptors(inputMeasures):
             desc['melIntervs']+desc['pitchSpan']+desc['pitchRanges']
         m['descriptors'] = desc
         m['measure'] = 'seeOtherList'
-    end = time.time()
-    print(end - start)
     return allMeasures
 
 
@@ -120,6 +118,7 @@ def calcDescriptors(inputMeasures):
 # path = 'wtcb'
 # path = 'wtcc'
 # path = 'wtcd'
+start = time.time()
 path = sys.argv[1]
 pathList = fu.get_list_files(path, extension="xml")
 scoreTuppleList = mu.get_scores_from_paths_json(pathList)
@@ -127,6 +126,8 @@ allMeasures = getMeasuresList(scoreTuppleList)
 allMeasuresDesc = calcDescriptors(allMeasures)
 # pprint.pprint(allMeasuresDesc)
 
+end = time.time()
+print(end - start)
 
 with open(path+'.json', 'w') as json_file:
     json.dump(allMeasuresDesc, json_file)
