@@ -113,6 +113,25 @@ def getMeasuresListJson(scores,verbose=False):
                     allMeasures.append(obj)
     return allMeasures
 
+def thisMeasure(measJSON,allMeasures):
+    for a in allMeasures:
+        if measJSON['path']==a['path'] and measJSON['part']==a['part'] and measJSON['number']==a['number']:
+            a['descriptors']=measJSON['descriptors']
+            return a
+    return 'notFound'
+
+def measureIsMultiVoice(measureStream):
+    ret = False
+    numVoices = 0
+    for e in measureStream.recurse():
+        if type(e)== chord.Chord:
+            ret = True
+        if type(e)== stream.Voice:
+            numVoices+=1
+    if numVoices >1:
+        ret = True
+    return ret
+
 def remove_breaks(strm):
     """
     Removes all page and system breaks from a music21 stream
